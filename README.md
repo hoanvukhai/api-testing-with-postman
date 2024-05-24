@@ -11,7 +11,7 @@ API được lựa chọn cho bài tập này là **OpenWeatherMap API**, một 
 - **Điểm cuối chính**: `https://api.openweathermap.org/data/2.5/weather`
 - **Phương thức**: GET
 - **Tham số bắt buộc**:
-  - `q` (Tên thành phố, ví dụ: `q=London`)
+  - `q` (Tên thành phố, ví dụ: `q=Hanoi`)
   - `appid` (API key của người dùng)
 
 ## Các Trường Hợp Kiểm Thử
