@@ -47,33 +47,74 @@ Các trường hợp kiểm thử chính cho API này bao gồm:
 
 ### Trường Hợp Kiểm Thử 1
 ![image](https://github.com/hoanvukhai/api-testing-with-postman/assets/129703780/cd21e27a-07c4-441c-b6f6-7f6f19bc7c70)
-![image](https://github.com/hoanvukhai/api-testing-with-postman/assets/129703780/cd21e27a-07c4-441c-b6f6-7f6f19bc7c70)
-
-- **Mã Trạng Thái**: 200
-- **Kết Quả**: Dữ liệu thời tiết chi tiết cho thành phố Hanoi.
+{
+    "coord": {
+        "lon": 105.8412,
+        "lat": 21.0245
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 306.15,
+        "feels_like": 313.15,
+        "temp_min": 306.15,
+        "temp_max": 306.15,
+        "pressure": 1004,
+        "humidity": 64,
+        "sea_level": 1004,
+        "grnd_level": 1003
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 4.26,
+        "deg": 146,
+        "gust": 6.97
+    },
+    "clouds": {
+        "all": 95
+    },
+    "dt": 1716544748,
+    "sys": {
+        "type": 1,
+        "id": 9308,
+        "country": "VN",
+        "sunrise": 1716502573,
+        "sunset": 1716550264
+    },
+    "timezone": 25200,
+    "id": 1581130,
+    "name": "Hanoi",
+    "cod": 200
+}
 
 ### Trường Hợp Kiểm Thử 2
 ![image](https://github.com/hoanvukhai/api-testing-with-postman/assets/129703780/cb3508c4-5649-4e30-b913-ea75dde87fdd)
-![image](https://github.com/hoanvukhai/api-testing-with-postman/assets/129703780/cb3508c4-5649-4e30-b913-ea75dde87fdd)
-
-- **Mã Trạng Thái**: 404
-- **Kết Quả**: Thông báo "city not found".
+{
+    "cod": "404",
+    "message": "city not found"
+}
 
 ### Trường Hợp Kiểm Thử 3
 ![image](https://github.com/hoanvukhai/api-testing-with-postman/assets/129703780/f52acd45-8aa7-4d67-8ab7-3d899cdc88af)
-![image](https://github.com/hoanvukhai/api-testing-with-postman/assets/129703780/f52acd45-8aa7-4d67-8ab7-3d899cdc88af)
 ![image](https://github.com/hoanvukhai/api-testing-with-postman/assets/129703780/d1f3fab2-8489-494f-9f6d-c46df17d1710)
-![image](https://github.com/hoanvukhai/api-testing-with-postman/assets/129703780/d1f3fab2-8489-494f-9f6d-c46df17d1710)
-
-- **Mã Trạng Thái**: 401
-- **Kết Quả**: Thông báo lỗi xác thực "Invalid API key".
+{
+    "cod": 401,
+    "message": "Invalid API key. Please see https://openweathermap.org/faq#error401 for more info."
+}
 
 ### Trường Hợp Kiểm Thử 4
 ![image](https://github.com/hoanvukhai/api-testing-with-postman/assets/129703780/2f427abd-b78e-4806-9072-d0f44ec9076b)
-![image](https://github.com/hoanvukhai/api-testing-with-postman/assets/129703780/2f427abd-b78e-4806-9072-d0f44ec9076b)
-
-- **Mã Trạng Thái**: 400
-- **Kết Quả**: Thông báo "Nothing to geocode".
+{
+    "cod": "400",
+    "message": "Nothing to geocode"
+}
 
 ## Báo Cáo Kiểm Thử Chi Tiết
 
